@@ -46,6 +46,17 @@ Clone the project
 5) Make the necessary changes to the path of the directories in the notebook
 6) Finally create a notebook and upload the above notebook to run and execute the cells
 
+## To run the Django Server with the pretrained model on local server
+
+1) Download both the folders and place them in the new folder say Lunar11
+2) open terminal at Lunar11 and type ".\myproject\Scripts\activate"
+3) Execute "cd LunarRockSeg"
+4) Execute "python manage.py runserver"
+5) Click on the local https link and run the model
+
+There is a demonstration video available on the link :- "https://youtu.be/1RoidkvrFAM"
+
+P.S. Ignore the quality degradation of the video and mail us for any queries
 
 
 ## Note :- This is for testing only not for deployment
