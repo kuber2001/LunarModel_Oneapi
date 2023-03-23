@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu6oVcuI5xz0Ub8CO4iYd5itxA8cYpyIuZhg&usqp=CAU");
+            height: 100%;
+            width:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>   
+    <!-- <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png">
+    </div>  -->
+    <div>
+        <h4 class="mb-2">Click on the "Choose File" button to upload a filehn:</h4>
+        
+        <form class="form-inline" action="." enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button type="submit" class="btn btn-primary mb-0">Predict</button>
+        </form>
+
+        <hr>
+
+        {% if img_obj %}
+        <h3>Prediction on Image</h3>
+        <div>
+            <div>
+                <img src="{{ input_image_uri }}" height="200" width="200" >
+                <h4 class="card-title">Original Image</h4>
+            </div>
+            <div>
+                <img src="{{ mask_uri }}" height="200" width="200" >
+                <h4 class="card-title">Predicted Mask</h4>
+            </div>
+        </div>
+        {% endif %}
+        
+        <hr>
+    </div>
+</body>
+</html>
