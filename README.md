@@ -10,6 +10,11 @@ The model is using instance segmentaion to classify the images into 4 classes of
 
 The model can be optimized using parallel processing libraries or Intel Open Vino Toolkit, which we shall try to update soon.
 
+# Description
+
+Our project lunar api as established in the documentation uses Segmentation model that is developed using CNN in a U-net Architecture. As a result based on the huge dataset we are training the model on, it requires optimization. 
+The average time for training of the model was approx. 50 mins to 1 hr in our local systems. Moreover in some local system it failed to execute at all. In comes the oneapi, using the devcloud access provided to us by Shriram Vasudevan sir and with the guidance of other mentors such as Arun, Akshay and Joel, we learnt how to migrate our code to devcloud and use the Intel Analytics toolkit.
+The most prominent of them all, was onednn, which was optimized in tensorflow 11.0 version to get the required training output in mere 35 mins. It boosted the speed significantly, additionally we are trying to use openvino toolkit to make it more faster and perhaps reducing the training time to 20 mins.
 
 # TechStack
 
