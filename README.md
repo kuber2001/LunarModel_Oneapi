@@ -1,6 +1,6 @@
 # LunarModel_Oneapi
 
-This Model was constucted by me and other team members including Akanksha Bansal, Nehal Sahukar and Kuber Vajpayee of my team, for the Intel OneAPI Hackathon. 
+This Model was constucted by me and other team members including Akanksha Bansal, Nehal Sahukar and Aditya Kumar choubey of my team, for the Intel OneAPI Hackathon. 
 It contains code for the constructed model of object detection using OpenCV library and Convolutional networks. The model is designed to recognise the big rocks present on the surface of the moon so that it can help the rover to navigate using its sensors.
 The model is developed using U-Net architecture and OpenCV library.
 
