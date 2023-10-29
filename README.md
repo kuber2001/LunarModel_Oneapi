@@ -28,7 +28,7 @@ The most prominent of them all, was onednn, which was optimized in tensorflow 11
 Clone the project
 
 ```bash
-  git clone https://github.com/Demogorgon24242/LunarModel_Oneapi.git
+  https://github.com/kuber2001/LunarModel_Oneapi.git
 ```
 
 * Go to the project directory
